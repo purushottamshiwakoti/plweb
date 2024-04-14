@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_additional_cats",
+  "info": {
+    "singularName": "sub-additional-cat",
+    "pluralName": "sub-additional-cats",
+    "displayName": "SubAdditionalCat",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "additional_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::additional-category.additional-category",
+      "inversedBy": "sub_additional_cats"
+    },
+    "type": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "truck_capacity": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "truck_power": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.seo"
+    }
+  }
+}

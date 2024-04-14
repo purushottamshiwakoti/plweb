@@ -1,0 +1,74 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_uses",
+  "info": {
+    "singularName": "about-us",
+    "pluralName": "about-uses",
+    "displayName": "AboutUs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "about_component": {
+      "type": "richtext",
+      "required": true
+    },
+    "about_component_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "features": {
+      "type": "dynamiczone",
+      "components": [
+        "reusable-component.features"
+      ],
+      "required": true
+    },
+    "feedback": {
+      "type": "dynamiczone",
+      "components": [
+        "reusable-component.feedback"
+      ]
+    },
+    "IndustriesService": {
+      "type": "dynamiczone",
+      "components": [
+        "reusable-component.industries-service"
+      ]
+    },
+    "OurTeam": {
+      "type": "dynamiczone",
+      "components": [
+        "reusable-component.our-team"
+      ]
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
+    },
+    "banner": {
+      "type": "json"
+    },
+    "bgBanner": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

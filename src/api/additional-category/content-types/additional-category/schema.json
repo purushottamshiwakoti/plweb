@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "additional_categories",
+  "info": {
+    "singularName": "additional-category",
+    "pluralName": "additional-categories",
+    "displayName": "AdditionalCategory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "add_cat_name": {
+      "type": "string",
+      "required": true,
+      "unique": false,
+      "maxLength": 45,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sub_additional_cats": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sub-additional-cat.sub-additional-cat",
+      "mappedBy": "additional_category"
+    },
+    "HeaderTab": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "share-tabs.header-tabs"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.seo"
+    }
+  }
+}
