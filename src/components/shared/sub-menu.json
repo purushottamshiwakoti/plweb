@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_sub_menus",
+  "info": {
+    "displayName": "Sub Menu"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

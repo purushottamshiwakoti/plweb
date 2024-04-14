@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_menus",
+  "info": {
+    "displayName": "Menu",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Link": {
+      "type": "string",
+      "required": true
+    },
+    "submenu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.sub-menu"
+    }
+  }
+}

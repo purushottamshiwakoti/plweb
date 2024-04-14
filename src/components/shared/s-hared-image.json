@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_s_hared_images",
+  "info": {
+    "displayName": "SharedImage",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Alt": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
